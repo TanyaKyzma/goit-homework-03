@@ -1,0 +1,240 @@
+:root{
+ --bg-primary-brand: #4D5AE5;
+ --bg-pressed-state: #404BBF;
+ --c-dark: #2E2F42;
+ --c-success: #31D0AA;
+ --c-text:#434455;
+ --c-subtle-text: #8E8F99;
+ --c-accent:#E7E9FC;
+ --bg-light:#F4F4FD;
+ --c-modal-overlay: #2E2F42;
+ --bg-hero: #2E2F42;
+ --bg-white:#FFFFFF;
+ --bg-modal:#FCFCFC;
+ --c-white:#FFFFFF ;
+ --c-brand:#4D5AE5;
+ --c-state:#404BBF;
+ --c-light: #F4F4FD;
+
+}
+
+body{
+    font-family:"Roboto", sans-serif;
+    font-size:16px;
+    color: var(--c-text);
+    background-color: var(--bg-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;}
+
+button {
+    font-family: inherit;}
+
+/*Menu Navigation*/
+ .link-logo{
+    font-family: "Raleway", sans-serif ;
+    text-transform: uppercase;
+    color:var(--c-brand);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+ }
+
+.accent-n{
+    color:var(--c-dark);
+}
+
+.page-header :active{
+  color: var(--c-state);
+}
+
+.nav-links{
+    font-family:"Roboto", serif;
+    color:var(--c-dark);
+    font-weight: 500;
+    font-style: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.nav-links:hover,.nav-links:focus{
+color: var(--c-state);}
+
+.nav-address{
+font-style: normal;
+}
+
+.nav-contakts{
+   color:var(--c-dark);
+   font-family: Roboto;
+    line-height: 1.5;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--c-text);
+}
+
+.nav-contakts:hover,.nav-contakts:focus{
+    color: var(--c-state);}
+/*List-button*/
+
+.title-button{
+    font-family: "Roboto" sans-serif;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 56px;
+    color: var(--c-white);
+    text-align: center;
+}
+
+.primary-button{
+    color: var(--c-white);
+    background: var(--bg-primary-brand);
+    font-family:"Roboto" sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+
+.primary-button:hover{
+    color: var(--c-white);
+    background: var(--bg-pressed-state);
+}
+
+.primary-button:focus{
+background:var(--bg-pressed-state);
+}
+
+.list-button{
+    background: var(--bg-hero);
+}
+
+/*Feature*/
+.title-feature{
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--c-dark);
+}
+
+.visually-hidden {
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.text-feature{
+    font-family: "Roboto" sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing:0.02em;
+    color: var(--c-text);
+
+}
+
+/*Team*/
+.page-team{
+    background: var(--bg-light);
+}
+
+.title-teams{
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--c-dark);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.foto-teams{
+    background-color: var(--bg-white);
+}
+
+.title-team{
+    font-family:"Roboto" sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--c-dark);
+}
+
+.text-team{
+font-family: "Roboto";
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--c-text);
+}
+
+/*Portfolio*/
+
+.title-portfolios{
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.title-portfolio{
+    font-family: "Roboto" sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--c-dark)
+}
+
+.text-portfolio{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--c-text);
+}
+
+/*Footer*/
+.page-footer{
+    background: var(--bg-hero);
+}
+
+.logo-footer{
+    color: var(--c-brand);
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.accent-f{
+    color: var(--c-light);
+}
+
+.text-footer{
+   font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color:var(--c-light);
+}
