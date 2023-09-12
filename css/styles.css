@@ -23,6 +23,7 @@ body{
     font-size:16px;
     color: var(--c-text);
     background-color: var(--bg-white);
+
 }
 
 a {
@@ -49,11 +50,17 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    padding: 0 15px;
 }
 
 button {
     font-family: inherit;}
 
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding:0 15px 0 15px;
+}
 /*Menu Navigation*/
 .page-header{
 border-bottom: 1px solid #e7e9fc;
@@ -62,8 +69,9 @@ border-bottom: 1px solid #e7e9fc;
     justify-content: space-between;
     display: flex;
     align-items: center;
-    width: 1158px;
-    padding: 0 15px
+    padding: 0 15px;
+    flex-shrink: 0;
+    flex-basis: 1158px;
 }
 .header-contakts {
 display: flex;
@@ -147,7 +155,8 @@ gap: 40px;
 
 .nav-contakts:hover,.nav-contakts:focus{
     color: var(--c-state);}
-/*List-button*/
+
+    /*List-button*/
 .title-button{
     display: flex;
     font-family: "Roboto" sans-serif;
@@ -162,7 +171,7 @@ gap: 40px;
 .inner-button{
     display: flex;
     background: var(--bg-hero);
-    width: 1440px;
+    width: 1158px;
     height: 600px;
     flex-shrink: 0;
 }
@@ -181,7 +190,7 @@ gap: 40px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    display: block;
+    display:block;
     min-width: 169px;
    height: 56px;
    border: none;
@@ -200,9 +209,14 @@ background:var(--bg-pressed-state);
 
 .list-button{
     background: var(--bg-hero);
+    padding: 188px 0 188px;
 }
 
 /*Feature*/
+
+.list-feature{
+    display: flex;
+}
 .title-feature{
     font-family: "Roboto" sans-serif;
     font-weight: 500;
@@ -230,6 +244,10 @@ background:var(--bg-pressed-state);
 /*Team*/
 .page-team{
     background: var(--bg-light);
+    display: flex;
+}
+.list-team{
+    display: flex;
 }
 
 .title-teams{
@@ -265,7 +283,10 @@ color: var(--c-text);
 }
 
 /*Portfolio*/
-
+.list-portfolio{
+    display: flex;
+    flex-wrap: wrap;
+}
 .title-portfolios{
     font-family: Roboto;
     font-size: 36px;
@@ -297,6 +318,7 @@ color: var(--c-text);
 /*Footer*/
 .page-footer{
     background: var(--bg-hero);
+    padding: 100px 0;
 }
 
 .logo-footer{
@@ -307,6 +329,8 @@ color: var(--c-text);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .accent-f{
     color: var(--c-light);
@@ -319,4 +343,5 @@ color: var(--c-text);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--c-light);
+    max-width: 264px;
 }
