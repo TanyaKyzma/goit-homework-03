@@ -334,7 +334,7 @@ padding: 120px 0 120px 0;}
 }
 
 .item-portfolio{
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .title-portfolio{
@@ -363,6 +363,7 @@ padding: 120px 0 120px 0;}
 }
 
 .logo-footer{
+    display: inline-block;
     color: var(--c-brand);
     font-family: "Raleway",sans-serif;
     font-size: 18px;
@@ -370,7 +371,6 @@ padding: 120px 0 120px 0;}
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    display: inline-block;
     margin-bottom: 16px;
 }
 .accent-f{
