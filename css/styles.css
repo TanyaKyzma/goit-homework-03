@@ -68,7 +68,9 @@ button {
 .page-header{
 border-bottom: 1px solid #e7e9fc;
 }
-
+.nav-item{
+    display: flex;
+}
 .nav-page{
     display: flex;
     align-items: center;
@@ -147,6 +149,13 @@ color: var(--c-state);}
     color: var(--c-state);}
 
     /*List-button*/
+    .list-button {
+    display: flex;
+    background: var(--bg-hero);
+    text-align: center;
+    padding: 188px 0;
+}
+
    .title-button{
     display: flex;
     font-family: "Roboto" sans-serif;
@@ -159,12 +168,6 @@ color: var(--c-state);}
     max-width: 496px;
     margin: 0 auto;
 }
-.list-button{
-    display: flex;
-    background: var(--bg-hero);
-    text-align: center;
-    padding: 188px 0;
-    }
 
 .item-button{
     display: flex;
