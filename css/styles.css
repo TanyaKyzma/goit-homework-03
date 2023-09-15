@@ -64,43 +64,16 @@ button {
   padding:0 15px 0 15px;
 }
 
-.section {
-    padding: 120px 0;
-}
 /*Menu Navigation*/
 .page-header{
 border-bottom: 1px solid #e7e9fc;
 }
-.inner-logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-    flex-shrink: 0;
-    flex-basis: 1158px;}
-
-.header-contakts {
-display: flex;
-}
 
 .nav-page{
     display: flex;
-    flex-grow: 1;
     align-items: center;
-
+    margin-right: 332px;
 }
-.nav-menu{
-    display: flex;
-    gap: 40px;
-    padding: 24px 0;
-    flex-grow: 1;
-}
-
-.inner-logo{
-    display: flex;
-    align-items: center;
-    margin: 0 156px;
-    }
 
  .link-logo{
     display: flex;
@@ -115,43 +88,47 @@ display: flex;
     margin-right: 76px;
  }
 
-.accent-n{
-    color:var(--c-dark);
+  .nav-page.link-logo{
+   margin-right: 76px;
+  }
+
+.accent-n {
+    color: var(--c-dark);
 }
 
-.page-header :active{
-  color: var(--c-state);
+ .nav-menu {
+    display: flex;
+    gap: 40px;
 }
-.nav-mail{
+
+.nav-links {
+    display: inline-block;
+    font-family: "Roboto", serif;
+    color: var(--c-dark);
+    font-weight: 500;
+    font-style: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 24px 0;
+}
+
+.nav-address {
+    display: flex;
+    font-style: normal;
+}
+
+.nav-mail {
     display: flex;
     padding: 24px 0;
     gap: 40px;
     align-items: center;
 }
-.nav-links{
-    display: inline-block;
-    font-family:"Roboto", serif;
-    color:var(--c-dark);
-    font-weight: 500;
-    font-style: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    padding: 14px 0;
-}
 
-.nav-links:hover,.nav-links:focus{
-color: var(--c-state);}
-
-.nav-address{
+.nav-contakts {
     display: flex;
-    font-style: normal;
-}
-
-.nav-contakts{
-    display: flex;
-   margin-right: 40px;
-   color:var(--c-dark);
-   font-family: Roboto;
+    margin-right: 40px;
+    color: var(--c-dark);
+    font-family: Roboto;
     line-height: 1.5;
     font-size: 16px;
     font-weight: 400;
@@ -159,11 +136,18 @@ color: var(--c-state);}
     color: var(--c-text);
 }
 
+.page-header :active{
+  color: var(--c-state);
+}
+
+.nav-links:hover,.nav-links:focus{
+color: var(--c-state);}
+
 .nav-contakts:hover,.nav-contakts:focus{
     color: var(--c-state);}
 
     /*List-button*/
-.title-button{
+   .title-button{
     display: flex;
     font-family: "Roboto" sans-serif;
     line-height: 1.07;
@@ -172,15 +156,14 @@ color: var(--c-state);}
     font-size: 56px;
     color: var(--c-white);
     text-align: center;
-    max-width: 496px
+    max-width: 496px;
+    margin: 0 auto;
 }
-.inner-button{
+.list-button{
     display: flex;
     background: var(--bg-hero);
-    width: 1158px;
-    flex-shrink: 0;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    padding: 188px 0;
     }
 
 .item-button{
@@ -188,6 +171,9 @@ color: var(--c-state);}
     padding: 16px 32px;
 }
 .primary-button{
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
     color: var(--c-white);
     background: var(--bg-primary-brand);
     font-family:"Roboto" sans-serif;
@@ -197,27 +183,19 @@ color: var(--c-state);}
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
-    display:block;
     min-width: 169px;
-   height: 56px;
-   border: none;
-border-radius: 4px;
-cursor: pointer;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .primary-button:hover{
-    color: var(--c-white);
     background: var(--bg-pressed-state);
 }
 
 .primary-button:focus{
 background:var(--bg-pressed-state);
-}
-
-.list-button{
-    background: var(--bg-hero);
-    padding: 188px 0 188px;
-    margin-bottom: 60px;
 }
 
 /*Feature*/
@@ -229,7 +207,6 @@ background:var(--bg-pressed-state);
     display: flex;
     gap: 24px;
     align-items: center;
-    margin: 60px 156px;
 }
 
 .item-feature{
@@ -278,7 +255,7 @@ width: calc((100% - 72px) / 4);
 .page-team{
     background: var(--bg-light);
     display: flex;
-    padding: 120px 156px;
+    padding:120px 0;
 }
 .page-team img{
     min-width: 100%;
@@ -327,6 +304,8 @@ text-align: center;
 }
 
 /*Portfolio*/
+.page-portfolio{
+padding: 120px 0 120px 0;}
 
 .list-portfolio{
     display: flex;
