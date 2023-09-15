@@ -68,9 +68,6 @@ button {
 .page-header{
 border-bottom: 1px solid #e7e9fc;
 }
-.container{
-    display: flex;
-}
 .nav-page{
     display: flex;
     align-items: center;
@@ -334,7 +331,7 @@ padding: 120px 0 120px 0;}
 }
 
 .item-portfolio{
-  flex-basis: calc((100% - 48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .title-portfolio{
