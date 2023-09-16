@@ -74,7 +74,7 @@ border-bottom: 1px solid #e7e9fc;
 .nav-page{
     display: flex;
     align-items: center;
-    margin-right: 332px;
+    margin: auto;
 }
 
  .link-logo{
@@ -121,7 +121,6 @@ border-bottom: 1px solid #e7e9fc;
 
 .nav-mail {
     display: flex;
-    padding: 24px 0;
     gap: 40px;
     align-items: center;
 }
@@ -166,7 +165,8 @@ color: var(--c-state);}
     color: var(--c-white);
     text-align: center;
     max-width: 496px;
-    margin: 0 auto;
+    margin:0 auto;
+    padding-bottom: 48px;
 }
 
 .item-button{
@@ -264,6 +264,10 @@ width: calc((100% - 72px) / 4);
     min-width: 100%;
 }
 
+.item-teams{
+    background-color: var(--c-white);
+}
+
 .list-team{
     display: flex;
     gap: 24px;
@@ -278,7 +282,8 @@ width: calc((100% - 72px) / 4);
     letter-spacing: 0.02em;
     color: var(--c-dark);
     text-transform: capitalize;
-    text-align: center;}
+    text-align: center;
+    background-color:var(--c-white);}
 
 .info-team{
         padding: 32px 0;
